@@ -23,7 +23,7 @@ shell_exec("cd .. && screenshot.exe");
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="shortcut icon" href="remote-control.png">
+    <link rel="shortcut icon" href="../remote-control.png">
 </head>
 <body>
     <div id="content">

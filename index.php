@@ -43,11 +43,11 @@ if($_GET["password"] != APPLICATION_PASSWORD) {
 </head>
 <body>
     <div id="content">
-        <a href="actions/screenshot.php?password=<?= APPLICATION_PASSWORD ?>" class="button button2">Zrzut ekranu</a> <br>
+        <a href="actions/screenshot.php?password=<?= APPLICATION_PASSWORD ?>" class="button button7">Zrzut ekranu</a> <br>
         <a href="actions/poweroff.php?password=<?= APPLICATION_PASSWORD ?>" class="button button3">Wyłącz komputer</a> <br>
         <a href="actions/reboot.php?password=<?= APPLICATION_PASSWORD ?>" class="button button6">Uruchom ponownie</a> <br>
         <a href="actions/logout.php?password=<?= APPLICATION_PASSWORD ?>" class="button button2">Wyloguj użytkownika</a> <br>
-        <a href="actions/cancel.php?password=<?= APPLICATION_PASSWORD ?>" class="button button2">Anuluj zamykanie</a> <br>
+        <a href="actions/cancel.php?password=<?= APPLICATION_PASSWORD ?>" class="button">Anuluj zamykanie</a> <br>
         <?php
             if(file_exists("background")) {
                 if(file_get_contents("background") == "light") {
@@ -58,6 +58,18 @@ if($_GET["password"] != APPLICATION_PASSWORD) {
                 }
             }
         ?>
+        <br> <br> <br>
+        <a href="actions/volume.php?password=<?= APPLICATION_PASSWORD ?>&level=0" class="button">Głośność: 0%</a> <br>
+        <a href="actions/volume.php?password=<?= APPLICATION_PASSWORD ?>&level=10" class="button button2">Głośność: 10%</a> <br>
+        <a href="actions/volume.php?password=<?= APPLICATION_PASSWORD ?>&level=20" class="button button3">Głośność: 20%</a> <br>
+        <a href="actions/volume.php?password=<?= APPLICATION_PASSWORD ?>&level=30" class="button button6">Głośność: 30%</a> <br>
+        <a href="actions/volume.php?password=<?= APPLICATION_PASSWORD ?>&level=40" class="button button7">Głośność: 40%</a> <br>
+        <a href="actions/volume.php?password=<?= APPLICATION_PASSWORD ?>&level=50" class="button">Głośność: 50%</a> <br>
+        <a href="actions/volume.php?password=<?= APPLICATION_PASSWORD ?>&level=60" class="button button2">Głośność: 60%</a> <br>
+        <a href="actions/volume.php?password=<?= APPLICATION_PASSWORD ?>&level=70" class="button button3">Głośność: 70%</a> <br>
+        <a href="actions/volume.php?password=<?= APPLICATION_PASSWORD ?>&level=80" class="button button6">Głośność: 80%</a> <br>
+        <a href="actions/volume.php?password=<?= APPLICATION_PASSWORD ?>&level=90" class="button button7">Głośność: 90%</a> <br>
+        <a href="actions/volume.php?password=<?= APPLICATION_PASSWORD ?>&level=100" class="button">Głośność: 100%</a> <br>
     </div>
 </body>
 </html>
