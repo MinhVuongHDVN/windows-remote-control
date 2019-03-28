@@ -70,6 +70,10 @@ if($_GET["password"] != APPLICATION_PASSWORD) {
         <a href="actions/volume.php?password=<?= APPLICATION_PASSWORD ?>&level=80" class="button button6">Głośność: 80%</a> <br>
         <a href="actions/volume.php?password=<?= APPLICATION_PASSWORD ?>&level=90" class="button button7">Głośność: 90%</a> <br>
         <a href="actions/volume.php?password=<?= APPLICATION_PASSWORD ?>&level=100" class="button">Głośność: 100%</a> <br>
+        <br> <br> <br>
+            &copy; Fenek912 | 
+            <a href="https://github.com/Fenek912/windows-remote-control" target="_blank" class="footerlink">GitHub</a>
+        <br> <br>
     </div>
 </body>
 </html>

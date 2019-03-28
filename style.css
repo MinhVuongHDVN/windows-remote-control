@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    color: #4caf50;
 }
 
 .button {
@@ -22,3 +23,13 @@ body {
 .button5 {background-color: #555555;}
 .button6 {background-color: orange;}
 .button7 {background-color: purple;}
+
+.footerlink {
+    text-decoration: none;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.footerlink:hover {
+    text-decoration: underline;
+}
