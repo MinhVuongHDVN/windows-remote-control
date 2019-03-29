@@ -24,12 +24,17 @@ body {
 .button6 {background-color: orange;}
 .button7 {background-color: purple;}
 
-.footerlink {
+.github {
     text-decoration: none;
     color: #4caf50;
     font-weight: bold;
 }
 
-.footerlink:hover {
+.github:hover {
     text-decoration: underline;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
 }
