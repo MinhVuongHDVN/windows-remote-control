@@ -117,7 +117,7 @@ if($_GET["password"] != APPLICATION_PASSWORD) {
             <a href="javascript:switcher();" class="button button7">Zmiana hasła Windows</a> <br>
         </div>
         <br> <br> <br>
-            <b>&copy;</b> Fenek912 | v1.2 | 
+            <b>&copy;</b> Fenek912 | v1.2.1 | 
             <a href="https://github.com/Fenek912/windows-remote-control" target="_blank" class="github">GitHub</a>
         <br> <br>
     <script>

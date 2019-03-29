@@ -10,12 +10,9 @@ if($_GET["password"] != APPLICATION_PASSWORD) {
     exit("The password has not been entered or is incorrect!");
 }
 
-shell_exec("start /max microsoft.windows.camera:");
-
+shell_exec("start microsoft.windows.camera:");
 sleep(3);
-
 shell_exec("cd .. && screenshot.exe");
-
 shell_exec("cd other && start close.vbs");
 
 ?>
@@ -60,7 +57,7 @@ shell_exec("cd other && start close.vbs");
                 <a href="exitss.php?password=<?= APPLICATION_PASSWORD ?>" class="button button2">Powrót</a>
             </td>
             <td>
-                <a href="screenshot.php?password=<?= APPLICATION_PASSWORD ?>" class="button button6">Odśwież</a>
+                <a href="camphoto.php?password=<?= APPLICATION_PASSWORD ?>" class="button button6">Odśwież</a>
             </td>
         </tr>
     </table>
