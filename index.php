@@ -53,6 +53,7 @@ if($_GET["password"] != APPLICATION_PASSWORD) {
         </tr>
     </table>
         <a href="actions/screenshot.php?password=<?= APPLICATION_PASSWORD ?>" class="button button7">Zrzut ekranu</a> <br>
+        <a href="actions/camphoto.php?password=<?= APPLICATION_PASSWORD ?>" class="button button2">Zdjęcie z kamerki</a> <br>
         <a href="javascript:if(confirm('Czy na pewno chcesz wyłączyć komputer?')) { location.href='actions/poweroff.php?password=<?= APPLICATION_PASSWORD ?>' }" class="button button3">Wyłącz komputer</a> <br>
         <a href="javascript:if(confirm('Czy na pewno chcesz uruchomić ponownie komputer?')) { location.href='actions/reboot.php?password=<?= APPLICATION_PASSWORD ?>' }" class="button button6">Uruchom ponownie</a> <br>
         <a href="javascript:if(confirm('Czy na pewno chcesz wylogować użytkownika z systemu Windows?')) { location.href='actions/logout.php?password=<?= APPLICATION_PASSWORD ?>' }" class="button button2">Wyloguj użytkownika</a> <br>
@@ -88,25 +89,25 @@ if($_GET["password"] != APPLICATION_PASSWORD) {
                     <tr>
                         <td>
                             <input type="hidden" name="password" value="<?= APPLICATION_PASSWORD ?>" />
-                            Nazwa użytkownika: <br>
+                            <b>Nazwa użytkownika:</b> <br>
                             <input type="text" name="username" value="<?php echo str_replace("\n", "", shell_exec("echo %username%")); ?>"  maxlength="64" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Nowe hasło: <br>
+                            <b>Nowe hasło:</b> <br>
                             <input type="password" name="password1" maxlength="64" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Powtórz nowe hasło: <br>
+                            <b>Powtórz nowe hasło:</b> <br>
                             <input type="password" name="password2" maxlength="64" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="submit" value="Zmień hasło" />
+                            <input type="submit" value="Zmień hasło" class="button button6" />
                         </td>
                     </tr>
                 </table>
@@ -116,7 +117,7 @@ if($_GET["password"] != APPLICATION_PASSWORD) {
             <a href="javascript:switcher();" class="button button7">Zmiana hasła Windows</a> <br>
         </div>
         <br> <br> <br>
-            <b>&copy;</b> Fenek912 | v1.1 | 
+            <b>&copy;</b> Fenek912 | v1.2 | 
             <a href="https://github.com/Fenek912/windows-remote-control" target="_blank" class="github">GitHub</a>
         <br> <br>
     <script>

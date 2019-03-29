@@ -5,6 +5,7 @@ body {
 }
 
 .button {
+    font-family: 'Montserrat', sans-serif;
     background-color: #4caf50;
     border: none;
     color: white;
@@ -37,4 +38,11 @@ body {
 table {
     margin-left: auto;
     margin-right: auto;
+}
+
+input[type=text], [type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
